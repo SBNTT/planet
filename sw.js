@@ -2,7 +2,8 @@ const CACHE_NAME = 'planet-' + Date.now();
 const PRECACHE_URLS = [
   './',
   './index.html',
-  './favicon.png',
+  './favicon.ico',
+  './favicon-96x96.png',
 ];
 
 // Install: precache shell, skip waiting immediately

@@ -3,27 +3,32 @@
 
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon" type="image/png" href="./favicon.png" />
-  <link rel="manifest" href="./manifest.json" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <meta name="theme-color" content="#0b0e14" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
   <meta name="apple-mobile-web-app-title" content="Planet" />
-  <link rel="apple-touch-icon" href="./icon-192.png" />
+
+  <link rel="icon" type="image/png" href="./favicon-96x96.png" sizes="96x96" />
+
+  <link rel="shortcut icon" href="./favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png" />
+  <link rel="manifest" href="./manifest.json" />
+
   <title>Planet</title>
-  <script type="module" crossorigin src="./assets/index-CFsy7Nl2.js"></script>
+  <script type="module" crossorigin src="./assets/index-BFR6OoWE.js"></script>
   <link rel="modulepreload" crossorigin href="./assets/rolldown-runtime-Bl5yqL8p.js">
-  <link rel="modulepreload" crossorigin href="./assets/three-D3LWl7RU.js">
-  <link rel="stylesheet" crossorigin href="./assets/index-59e81wbM.css">
+  <link rel="modulepreload" crossorigin href="./assets/three-CRcMD4li.js">
+  <link rel="stylesheet" crossorigin href="./assets/index-CgwR9gNI.css">
 </head>
 
-<body>
-  <div id="app"></div>
+<body class="m-0 p-0 overflow-hidden bg-[#5b5b5b] font-sans">
+  <div id="app" class="w-screen h-screen"></div>
+  <div id="ui" class="pointer-events-none absolute inset-0 z-10 w-screen h-screen overflow-hidden"></div>
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').catch(() => {});
+        navigator.serviceWorker.register('/sw.js').catch(() => { });
       });
     }
   </script>
